@@ -8,6 +8,7 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "plugins": [{ "name": "next" }],
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@nexus/ui": ["../../packages/ui/src/index.ts"],
