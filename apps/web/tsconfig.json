@@ -1,0 +1,30 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "plugins": [{ "name": "next" }],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@nexus/ui": ["../../packages/ui/src/index.ts"],
+      "@nexus/ui/*": ["../../packages/ui/src/*"],
+      "@nexus/types": ["../../packages/types/src/index.ts"],
+      "@nexus/types/*": ["../../packages/types/src/*"],
+      "@nexus/utils": ["../../packages/utils/src/index.ts"],
+      "@nexus/utils/*": ["../../packages/utils/src/*"],
+      "@nexus/config": ["../../packages/config/src/index.ts"],
+      "@nexus/config/*": ["../../packages/config/src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}

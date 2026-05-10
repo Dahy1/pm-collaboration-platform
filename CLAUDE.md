@@ -30,6 +30,23 @@ Core modules:
 - No direct database access from UI except through approved Supabase client patterns.
 - Every major change must include tests or a clear reason why tests are not applicable.
 
+## Approved Tech Stack
+
+- Monorepo: pnpm workspaces
+- Web app: Next.js + TypeScript
+- Mobile app: Expo React Native + TypeScript
+- Backend: Supabase
+- Database: PostgreSQL
+- Auth: Supabase Auth
+- Realtime: Supabase Realtime
+- Storage: Supabase Storage
+- UI: Tailwind CSS + shadcn/ui
+- State: Zustand
+- Server state/cache: TanStack Query
+- Forms: React Hook Form + Zod
+- Testing: Vitest + Playwright
+- Notifications: Firebase Cloud Messaging / Expo Notifications
+
 ## Routing Requirements
 
 Use persistent routes:

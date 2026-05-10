@@ -1,0 +1,27 @@
+node_modules
+.next
+dist
+build
+.turbo
+.expo
+.expo-shared
+coverage
+
+# env
+.env
+.env.local
+.env.*.local
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# typescript
+*.tsbuildinfo

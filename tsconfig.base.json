@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nexus/ui": ["packages/ui/src/index.ts"],
+      "@nexus/ui/*": ["packages/ui/src/*"],
+      "@nexus/types": ["packages/types/src/index.ts"],
+      "@nexus/types/*": ["packages/types/src/*"],
+      "@nexus/utils": ["packages/utils/src/index.ts"],
+      "@nexus/utils/*": ["packages/utils/src/*"],
+      "@nexus/config": ["packages/config/src/index.ts"],
+      "@nexus/config/*": ["packages/config/src/*"]
+    }
+  }
+}
